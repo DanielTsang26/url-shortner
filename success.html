@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card p-4">
+            <h2 class="text-center text-success">✅ Success!</h2>
+            <p class="text-center">Here’s your shortened URL:</p>
+            <div class="shortened-url">
+                <a href="{{ short_url }}" target="_blank" class="short-url">{{ short_url }}</a>
+            </div>
+            <a href="/" class="btn btn-custom mt-3">Shorten Another URL</a>
+        </div>
+    </div>
+</body>
+</html>

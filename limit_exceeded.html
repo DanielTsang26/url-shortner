@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Limit Exceeded</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class = "limit-page">
+    <div class="container">
+        <div class="card p-4">
+            <h2 class="text-center text-danger">⚠️ Rate Limit Exceeded</h2>
+            <p class="text-center">You have reached the maximum number of URL submissions for today. Please try again tomorrow.</p>
+            <a href="{{ url_for('home') }}" class="btn btn-custom mt-3">Return Home</a>
+        </div>
+    </div>
+</body>
+</html>
